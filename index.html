@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentleman's Edge | Barber & Shaving Studio - Home</title>
+    <link rel="stylesheet" href="csslab.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-cut"></i> Gentleman's <span>Edge</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="gallery.html"><i class="fas fa-camera-retro"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#booking" class="btn-nav">Book Now</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Classic Shave, <br>Modern Master.</h1>
+            <p>Hot towel, straight razor, and attention to detail. Book your premium shaving session with our master barbers.</p>
+            <a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book a Shave</a>
+        </div>
+        <div class="hero-icon">
+            <i class="fas fa-razor"></i>
+        </div>
+    </header>
+
+    <section class="services">
+        <h2><i class="fas fa-scroll"></i> Signature Shaving Experiences</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-cut"></i>
+                <h3>Classic Hot Towel Shave</h3>
+                <p>Traditional straight razor shave + steam towels & aftershave balm.</p>
+                <div class="price">$35 <span>/ 45min</span></div>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-beard"></i>
+                <h3>Royal Beard Sculpt</h3>
+                <p>Precision beard shaping & edge up with oil and balm.</p>
+                <div class="price">$28 <span>/ 30min</span></div>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-spa"></i>
+                <h3>Luxury Head & Face Shave</h3>
+                <p>Full head + face grooming, exfoliation & mask.</p>
+                <div class="price">$55 <span>/ 60min</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+        <div class="booking-card">
+            <h2><i class="fas fa-calendar-check"></i> Reserve Your Chair</h2>
+            <p>Pick a date, service and our barber will confirm instantly.</p>
+            <form id="bookingForm" onsubmit="return storeBooking()">
+                <div class="form-group">
+                    <label for="fullName"><i class="fas fa-user"></i> Full Name *</label>
+                    <input type="text" id="fullName" placeholder="James Sterling" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailAddr"><i class="fas fa-envelope"></i> Email Address *</label>
+                    <input type="email" id="emailAddr" placeholder="hello@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNum"><i class="fas fa-phone"></i> Phone Number</label>
+                    <input type="tel" id="phoneNum" placeholder="+1 (212) 555 0000">
+                </div>
+                <div class="form-group">
+                    <label for="serviceChoice"><i class="fas fa-scissors"></i> Select Service *</label>
+                    <select id="serviceChoice" required>
+                        <option value="">-- Choose a service --</option>
+                        <option>Classic Hot Towel Shave - $35</option>
+                        <option>Royal Beard Sculpt - $28</option>
+                        <option>Luxury Head & Face Shave - $55</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="sessionDate"><i class="fas fa-calendar-day"></i> Preferred Date *</label>
+                        <input type="date" id="sessionDate" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="timeSlot"><i class="fas fa-clock"></i> Preferred Time</label>
+                        <select id="timeSlot">
+                            <option>10:00 AM</option>
+                            <option>11:30 AM</option>
+                            <option>1:00 PM</option>
+                            <option>2:30 PM</option>
+                            <option>4:00 PM</option>
+                            <option>5:30 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="notes"><i class="fas fa-pencil-alt"></i> Special Notes</label>
+                    <textarea id="notes" rows="3" placeholder="e.g., allergies, extra hot towel, preferred barber..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit"><i class="fas fa-check-circle"></i> Confirm Booking</button>
+                <div id="bookingStatusMsg"></div>
+            </form>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2><i class="fas fa-quote-left"></i> What Our Clients Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"The best hot towel shave I've ever had. The attention to detail is unmatched."</p>
+                <div class="client"><i class="fas fa-user-circle"></i> Michael R.</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"My beard has never looked better. The Royal Sculpt is a game changer."</p>
+                <div class="client"><i class="fas fa-user-circle"></i> David K.</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Incredible atmosphere and master barbers. I'll never go anywhere else."</p>
+                <div class="client"><i class="fas fa-user-circle"></i> Sarah T.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-cut"></i> Gentleman's Edge</h3>
+                <p>Traditional hot towel shaves & modern barbering. Sharp looks, sharp razors.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Ongata Rongai, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 757157215</p>
+                <p><i class="fas fa-envelope"></i> @gentlemansedge.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gentleman's Edge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentleman's Edge | Contact</title>
+    <link rel="stylesheet" href="csslab.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-cut"></i> Gentleman's <span>Edge</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="gallery.html"><i class="fas fa-camera-retro"></i> Gallery</a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="index.html#booking" class="btn-nav">Book Now</a>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <h2><i class="fas fa-address-card"></i> Visit or Talk to Us</h2>
+        <p style="text-align: center; color: #5a4a3a; margin-bottom: 2rem;">We'd love to hear from you. Reach out for bookings, inquiries, or just to say hello.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-info-card">
+                <h3><i class="fas fa-map-marker-alt"></i> The Shaving Lounge</h3>
+                <p><i class="fas fa-map-pin"></i> Ongata Rongai, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 757157215</p>
+                <p><i class="fas fa-envelope"></i> @gentlemansedge.com</p>
+                <p><i class="fas fa-clock"></i> Tue–Sat: 9:00 – 19:00 | Sun: 10–16</p>
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i> 📍 2 blocks from central station
+                </div>
+                
+            </div>
+            <div class="contact-form-card">
+                <h3><i class="fas fa-paper-plane"></i> Send a Quick Message</h3>
+                <form id="contactForm" onsubmit="return storeContactMessage()">
+                    <div class="form-group">
+                        <label for="contactName"><i class="fas fa-user"></i> Your Name *</label>
+                        <input type="text" id="contactName" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail"><i class="fas fa-envelope"></i> Email *</label>
+                        <input type="email" id="contactEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject"><i class="fas fa-tag"></i> Subject</label>
+                        <input type="text" id="contactSubject" placeholder="e.g., haircut inquiry, group booking">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMsg"><i class="fas fa-pencil-alt"></i> Message *</label>
+                        <textarea id="contactMsg" rows="5" placeholder="Tell us about your haircut or shaving needs..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    <div id="contactStatusMsg" style="margin-top: 1rem;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-cut"></i> Gentleman's Edge</h3>
+                <p>Traditional hot towel shaves & modern barbering. Sharp looks, sharp razors.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#booking">Book Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Ongata Rongai, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 757157215</p>
+                <p><i class="fas fa-envelope"></i>@gentlemansedge.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gentleman's Edge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
